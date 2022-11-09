@@ -1,10 +1,15 @@
 .eight-day-ft {
-    margin-top: 25px;
+    margin-top: 50px;
+    color: #fff;
 }
 .eight-day-ft__header {
     margin-bottom: 15px;
 }
 .eight-day-ft__title {
+    max-width: 250px;
+    padding: 10px;
+    color: #f7f7f7;
+    background: rgba(0,0,0,.5);
     font-size: 1.25rem;
 }
 .eight-day-ft__list {

@@ -1,5 +1,5 @@
 import React from "react";
-import FourtyFourHoursFtItem from "./FourtyFourHoursFtItem";
+import FourtyFourHoursFtItem from "./FourtyEightHoursFtItem";
 import "./index.css";
 
 const FourtyFourHoursForecast = ({ weatherData }) => {

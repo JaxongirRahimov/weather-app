@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import SearchLocationInput from "./components/SearchLocationInput";
 import LocationWeather from "./components/LocationWeather";
 import EightDaysForecast from "./components/EightDaysForecast";
-import FourtyFourHoursForecast from "./components/FourtyFourHoursForecast";
+import FourtyEightHoursForecast from "./components/FourtyEightHoursForecast";
 import Loader from "./components/Loader";
+import * as Images from "./assets";
 
 const App = () => {
   const [weatherData, setWeatherData] = useState(null);
@@ -34,10 +35,52 @@ const App = () => {
       }
     );
   };
+
+  const updateBackgroundImage = (weather) => {
+    const weatherType = weather.main.split(" ")[0].toLowerCase();
+    const isNight = weather.icon.slice(-1) === "n";
+    const body = document.body;
+
+    body.style = "background-position: center center; background-size: cover";
+
+    switch (weatherType) {
+      case "clear":
+        body.style.backgroundImage = `url(${
+          isNight ? Images.ClearSkyNight : Images.ClearSkyDay
+        })`;
+        break;
+      case "rain":
+        body.style.backgroundImage = `url(${
+          isNight ? Images.RainNight : Images.RainDay
+        })`;
+        break;
+      case "thunderstorm":
+        body.style.backgroundImage = `url(${
+          isNight ? Images.ThunderstormNight : Images.ThunderstormDay
+        })`;
+        break;
+      case "snow":
+        body.style.backgroundImage = `url(${
+          isNight ? Images.SnowNight : Images.SnowDay
+        })`;
+        break;
+      case "mist":
+        body.style.backgroundImage = `url(${
+          isNight ? Images.MistDay : Images.MistNight
+        })`;
+        break;
+      case "clouds":
+        body.style.backgroundImage = `url(${
+          isNight ? Images.CloudsDay : Images.CloudsNight
+        })`;
+        break;
+      default:
+    }
+  };
+
   const fetchWeatherApi = async (coordinates) => {
     try {
       setIsLoading(true);
-      console.log("Coordinates", coordinates);
       const userCoordinates =
         coordinates &&
         `lat=${coordinates.latitude}&lon=${
@@ -66,6 +109,7 @@ const App = () => {
         setIsLoading(false);
         setWeatherData(eightHourForecastData);
         setSingleDayWeather(data);
+        updateBackgroundImage(data.weather[0]);
       }
     } catch (error) {
       setIsLoading(false);
@@ -84,7 +128,7 @@ const App = () => {
         <>
           <LocationWeather singleDayWeather={singleDayWeather} />
           <EightDaysForecast weatherData={weatherData} />
-          <FourtyFourHoursForecast weatherData={weatherData} />
+          <FourtyEightHoursForecast weatherData={weatherData} />
         </>
       ) : (
         <Loader />

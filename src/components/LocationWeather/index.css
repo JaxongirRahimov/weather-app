@@ -1,5 +1,6 @@
 .location-weather {
     margin-top: 50px;
+    color: #fff;
 }
 /* location  weather header */
 .location-weather__header {
@@ -8,7 +9,7 @@
     min-width: 200px;
     width: 300px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    background: #fff;
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
 .location-weather__header-title {
@@ -23,7 +24,7 @@
     align-items: center;
     margin-top: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    background: #fff;
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
 .location-weather__img {
@@ -52,6 +53,7 @@
 }
 .location-weather__item-text-box svg {
     transform: rotate(-45deg);
+    color: #fff;
 }
 
 
@@ -73,7 +75,7 @@
     margin-right: 20px;
     padding: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    background: #fff;
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
 .location-weather__item-text-box {
@@ -82,7 +84,7 @@
 }
 .location-weather__item-text-box > *:first-child {
     margin-bottom: 5px;
-    color: #555;
+    color: #ffff;
 }
 .location-weather__item-text-box > *:last-child {
     font-weight: 500;

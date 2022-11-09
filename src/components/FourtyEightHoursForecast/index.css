@@ -1,10 +1,14 @@
 .fourty-four-hft {
-    margin-top: 25px;
+    margin-top: 50px;
+    color: #fff;
 }
 .fourty-four-hft__header {
     margin-bottom: 15px;
 }
 .fourty-four-hft__title {
+    max-width: 250px;
+    padding: 10px;
+    background: rgba(0,0,0,.5);
     font-size: 1.25rem;
 }
 .fourty-four-hft__list {

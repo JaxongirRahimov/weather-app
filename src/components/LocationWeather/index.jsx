@@ -8,7 +8,6 @@ import { formatDate, calculateDewPoint, convertToCelcius } from "./helper";
 import "./index.css";
 
 const LocationWeather = ({ singleDayWeather }) => {
-  console.log(singleDayWeather);
   return (
     <section className="location-weather">
       <header className="location-weather__header">
@@ -52,11 +51,10 @@ const LocationWeather = ({ singleDayWeather }) => {
             <BiWind />
             <div className="location-weather__item-text-box">
               <span>WIND</span>
-              <span>
+              <span className="location-weather__item-icon-box">
                 {singleDayWeather.wind.speed} mph
                 <GrWaypoint
                   style={{
-                    color: "red",
                     transform: `rotate(${singleDayWeather.wind.deg}deg)`,
                   }}
                 />
@@ -86,7 +84,7 @@ const LocationWeather = ({ singleDayWeather }) => {
                   singleDayWeather.main.humidity,
                   convertToCelcius(singleDayWeather.main.feels_like)
                 )}
-                <sup>o</sup>
+                <sup>o</sup>C
               </span>
             </div>
           </li>

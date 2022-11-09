@@ -9,6 +9,12 @@ input {
     border-radius: 5px;
     font-size: 17px;
     border: 2px solid #555;
+    outline: transparent;
+    background: rgba(0,0,0,.3);
+    color: #f7f7f7;
+}
+input::placeholder {
+    color: #dadada;
 }
 button {
     align-self: stretch;
