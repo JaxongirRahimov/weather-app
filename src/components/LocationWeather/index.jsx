@@ -8,11 +8,12 @@ import { formatDate, calculateDewPoint, convertToCelcius } from "./helper";
 import "./index.css";
 
 const LocationWeather = ({ singleDayWeather }) => {
+  console.log(singleDayWeather);
   return (
     <section className="location-weather">
       <header className="location-weather__header">
         <h1 className="location-weather__header-title">
-          {singleDayWeather.name}
+          {singleDayWeather.name}, {"  "} {singleDayWeather.sys.country}
         </h1>
         <time
           dateTime={new Date(singleDayWeather.dt * 1000)}

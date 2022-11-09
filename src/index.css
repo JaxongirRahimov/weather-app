@@ -16,6 +16,7 @@ body {
   background-position: center center;
   background-size: contain;
   min-height: 100vh;
+  transition: background 5s ease-out;
 }
 
 code {
@@ -27,5 +28,5 @@ code {
 .app {
   max-width: 960px;
   width: 90%;
-  margin: 20px auto;
+  margin: 50px auto;
 }
