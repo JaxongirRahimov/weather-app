@@ -1,0 +1,15 @@
+.eight-day-ft {
+    margin-top: 25px;
+}
+.eight-day-ft__header {
+    margin-bottom: 15px;
+}
+.eight-day-ft__title {
+    font-size: 1.25rem;
+}
+.eight-day-ft__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}

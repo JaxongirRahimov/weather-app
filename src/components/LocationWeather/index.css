@@ -1,0 +1,90 @@
+.location-weather {
+    margin-top: 50px;
+}
+/* location  weather header */
+.location-weather__header {
+    margin-bottom: 5px;
+    padding: 10px;
+    min-width: 200px;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 5px;
+}
+.location-weather__header-title {
+    font-weight: 500;
+}
+.location-weather__header-time {
+    font-size: 16px;
+}
+/* location weather body */
+.location-weather__body {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 5px;
+}
+.location-weather__img {
+    height: 120px;
+}
+.location-weather__degree {
+    margin-right: 40px;
+    font-size: 5rem;
+    font-weight: 600;
+}
+.location-weather__degree sup {
+    position: relative;
+    top: -10px;
+    margin: 0;
+    font-size: 45px;
+    font-weight: 700;
+}
+.location-weather__degree > * {
+    margin-left:-25px;
+}
+ 
+ 
+.location-weather__description {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.location-weather__item-text-box svg {
+    transform: rotate(-45deg);
+}
+
+
+
+/* location weather footer */
+.location-weather__footer {
+    margin-top: 20px;
+}
+.location-weather__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+.location-weather__item {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+    padding: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 5px;
+}
+.location-weather__item-text-box {
+    display: flex;
+    flex-direction: column;
+}
+.location-weather__item-text-box > *:first-child {
+    margin-bottom: 5px;
+    color: #555;
+}
+.location-weather__item-text-box > *:last-child {
+    font-weight: 500;
+    font-size: 20px;
+}

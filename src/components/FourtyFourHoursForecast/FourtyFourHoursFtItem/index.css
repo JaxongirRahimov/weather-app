@@ -1,0 +1,28 @@
+.fourty-four-hft__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    min-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+.fourty-four-hft__item-date {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.fourty-four-hft__degree {
+    position: relative;
+    font-weight: 500;
+    font-size: 1.5rem;
+    
+}
+.fourty-four-hft__degree sup {
+    font-size: 15px;
+    font-weight: bold;
+}
+ 
+.fourty-four-hft__degree:not(:last-child) {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,22 @@
+form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    border: 2px solid #555;
+}
+button {
+    align-self: stretch;
+    width: 100px;
+    border: 0;
+    border-radius: 5px;
+    background: rgb(106, 106, 231);
+    cursor: pointer;
+    font-size: 19px;
+    color: #fff;
+}

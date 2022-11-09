@@ -1,0 +1,31 @@
+.fourty-four-hft {
+    margin-top: 25px;
+}
+.fourty-four-hft__header {
+    margin-bottom: 15px;
+}
+.fourty-four-hft__title {
+    font-size: 1.25rem;
+}
+.fourty-four-hft__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow-x: scroll;
+}
+.fourty-four-hft__list::-webkit-scrollbar {
+    width: 15px;
+    height: 10px;
+    border-radius: 30px;
+}   
+    /* Track */
+.fourty-four-hft__list::-webkit-scrollbar-track {
+    background: hsl(0, 5%, 90%);
+     
+}
+    /* Handle */
+.fourty-four-hft__list::-webkit-scrollbar-thumb {
+    background: hsl(0, 5%, 70%);
+    width: 20px;
+    border-radius: 5px;
+} 
